@@ -1,3 +1,553 @@
-
-Hallo Welt
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Fabian Spaeh</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <meta name="keywords" content="Fabian Spaeh,Fabian Späh"/>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Fabian Spaeh</h1>
+</header>
+<p><img src="me.jpg" alt="A picture of me"></p>
+<p>Fifth-year PhD student in computer science at <a
+href="https://www.bu.edu/academics/grs/">Boston University</a> advised
+by <a href="https://cs-people.bu.edu/aene/">Alina Ene</a>. I am broadly
+interested in optimization and currently working on learning-augmented
+algorithms for online allocation problems, submodular maximization, and
+graph algorithms. Previously, I completed a bachelor’s and master’s
+degree in computer science at the University of Konstanz. You can
+contact me by email via fspaeh <em>at</em> bu <em>dot</em> edu.</p>
+<!--- take a look at my [CV](CV/cv.pdf), or follow me on [Github](https://github.com/285714). -->
+<p style="text-align: center;">
+<a style="margin: 0 5%;" href="CV/cv.pdf">CV</a>
+<a style="margin: 0 5%;" href="https://github.com/285714">Github</a>
+<a style="margin: 0 5%;" href="https://www.linkedin.com/in/fabian-spaeh">Linkedin</a>
+</p>
+<h2 id="publications-and-manuscripts"><a
+href="https://dblp.org/pid/249/3514">Publications and
+Manuscripts</a></h2>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>
+publications
+</title>
+<style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-query-suggestion" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[1]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh, T. Chen, C.-H. Chiang, B. Shen, and C. Yu, <span>“Query
+suggestion for retrieval-augmented generation via dynamic few-shot
+learning at celonis.”</span> In submission.
+</div></li>
+</ol>
+</div>
+<div id="ref-election-sway" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[2]
+</div>
+<div class="csl-right-inline">
+<ol start="4" type="A">
+<li>Ristache, F. Spaeh, and C. Tsourakakis, <span>“Countering election
+sway: Strategic algorithms in friedkin-johnsen dynamics.”</span> In
+submission, doi: <a
+href="https://doi.org/10.48550/arXiv.2502.01874">10.48550/arXiv.2502.01874</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-galton-asch" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[3]
+</div>
+<div class="csl-right-inline">
+<ol start="4" type="A">
+<li>Ristache, F. Spaeh, and C. Tsourakakis, <span>“Wiser than the wisest
+of crowds: The <span>A</span>sch effect and polarization
+revisited.”</span> ECML PKDD 2024, doi: <a
+href="https://doi.org/10.48550/arXiv.2406.07805">10.48550/arXiv.2406.07805</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-hitting-times" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[4]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh, K. Sotiropoulos, and C. Tsourakakis,
+<span>“<span>ULTRA-MC</span>: A unified approach to learning mixtures of
+markov chains via hitting times.”</span> In submission, doi: <a
+href="https://doi.org/10.48550/arXiv.2405.15094">10.48550/arXiv.2405.15094</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-continuous-time" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[5]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh and C. Tsourakakis, <span>“Markovletics: Methods and a novel
+application for learning continuous-time markov chain mixtures.”</span>
+WWW 2024, doi: <a
+href="https://doi.org/10.48550/arXiv.2402.17730">10.48550/arXiv.2402.17730</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-k-submodular" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[6]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh, A. Ene, and H. L. Nguyen, <span>“Online and streaming
+algorithms for constrained k-submodular maximization.”</span> AAAI 2025,
+doi: <a
+href="https://doi.org/10.48550/arXiv.2305.16013">10.48550/arXiv.2305.16013</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-ad-allocation" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[7]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh and A. Ene, <span>“Online ad allocation with
+predictions.”</span> NeurIPS 2023, doi: <a
+href="https://doi.org/10.48550/arXiv.2302.01827">10.48550/arXiv.2302.01827</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-learning-mixtures" class="csl-entry"
+role="doc-biblioentry">
+<div class="csl-left-margin">
+[8]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh and C. Tsourakakis, <span>“Learning mixtures of markov chains
+with quality guarantees.”</span> WWW 2023, doi: <a
+href="https://doi.org/10.1145/3543507.3583524">10.1145/3543507.3583524</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-decision-trees" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[9]
+</div>
+<div class="csl-right-inline">
+<ol start="6" type="A">
+<li>Spaeh and S. Kosub, <span>“Global evaluation for decision tree
+learning.”</span> arXiv, 2022, doi: <a
+href="https://doi.org/10.48550/ARXIV.2208.04828">10.48550/ARXIV.2208.04828</a>.
+</div></li>
+</ol>
+</div>
+<div id="ref-blockchain" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">
+[10]
+</div>
+<div class="csl-right-inline">
+<ol start="20" type="A">
+<li>Hepp, F. Spaeh, A. Schönhals, P. Ehret, and B. Gipp,
+<span>“Exploring potentials and challenges of blockchain-based public
+key infrastructures.”</span> IEEE INFOCOM Workshops, 2019, doi: <a
+href="https://doi.org/10.1109/INFCOMW.2019.8845169">https://doi.org/10.1109/INFCOMW.2019.8845169</a>.
+</div></li>
+</ol>
+</div>
+</div>
+</body>
+</html>
+<h2 id="teaching">Teaching</h2>
+<p>In 2022, I received a Teaching Fellow Excellence Award from the
+Computer Science Department.</p>
+<ul>
+<li><a href="https://cs-people.bu.edu/sofya/cs537/">CS 537</a> -
+Randomness in Computing (Sofya Raskhodnikova). Graduate Class. Fall 2021
+and Fall 2022</li>
+<li><a href="https://cs-people.bu.edu/aene/cs531fa23/schedule.html">CS
+531</a> - Advanced Optimization Algorithms (Alina Ene). Graduate Class.
+Spring 2022 and Fall 2023</li>
+</ul>
+<h2 id="presentations">Presentations</h2>
+<ul>
+<li><em>Online and Streaming Algorithms for Constrained k-Submodular
+Maximization</em>. AAAI 2025. Poster and Talk.</li>
+<li><em>Markovletics: Methods and A Novel Application for Learning
+Continuous-Time Markov Chain Mixtures.</em> WWW 2024. Poster. Supported
+by an NSF Travel Grant</li>
+<li><em>Online Ad Allocation with Predictions.</em> NeurIPS 2023.
+Poster</li>
+<li><em>Online Ad Allocation with Predictions.</em> Northeastern
+University CS Theory Seminar. 2023. Talk</li>
+<li><em>Online Ad Allocation with Predictions.</em> Boston University
+Algorithms and Theory Seminar. 2023. Talk</li>
+<li><em>Learning Mixtures of Markov Chains with Quality Guarantees.</em>
+WWW 2023. Talk</li>
+</ul>
+<h2 id="service">Service</h2>
+<ul>
+<li>Program Committee: <a
+href="https://www.wsdm-conference.org/2024/">WSDM 2024</a> and <a
+href="https://www.wsdm-conference.org/2025/">WSDM 2025</a></li>
+<li>Program Committee and Guest Editorial Board: <a
+href="https://2024.ecmlpkdd.org/">ECML/PKDD 2024 journal track</a></li>
+<li>Contributor to <a
+href="https://github.com/jgrapht/jgrapht">JGraphT</a> and <a
+href="https://github.com/networkx/networkx">NetworkX</a></li>
+</ul>
+<p><small>Built with <a href="https://pandoc.org/">Pandoc</a> on March
+4, 2025.</small></p>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0H9ME7QHXP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());
+  gtag('config', 'G-0H9ME7QHXP');
+</script>
+</body>
+</html>
