@@ -7,9 +7,6 @@
   <title>Fabian Spaeh</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -84,9 +84,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -151,8 +152,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -160,9 +164,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <meta name="keywords" content="Fabian Spaeh,Fabian Späh"/>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
@@ -196,9 +197,6 @@ publications
 </title>
 <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -217,13 +215,16 @@ publications
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -273,9 +274,10 @@ publications
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -340,18 +342,22 @@ publications
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
     }
-    .hanging div.csl-entry {
+    .hanging-indent div.csl-entry {
       margin-left:2em;
       text-indent:-2em;
     }
@@ -365,15 +371,11 @@ publications
     }
     div.csl-indent {
       margin-left: 2em;
-    }
-  </style>
-<!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+    }  </style>
 </head>
 <body>
-<div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-multiobjective" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-multiobjective" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [1]
 </div>
@@ -386,7 +388,7 @@ href="https://doi.org/10.48550/arXiv.2505.09525">10.48550/arXiv.2505.09525</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-query-suggestion" class="csl-entry" role="doc-biblioentry">
+<div id="ref-query-suggestion" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [2]
 </div>
@@ -398,7 +400,7 @@ learning at celonis.”</span> In submission.
 </div></li>
 </ol>
 </div>
-<div id="ref-election-sway" class="csl-entry" role="doc-biblioentry">
+<div id="ref-election-sway" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [3]
 </div>
@@ -411,7 +413,7 @@ href="https://doi.org/10.48550/arXiv.2502.01874">10.48550/arXiv.2502.01874</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-galton-asch" class="csl-entry" role="doc-biblioentry">
+<div id="ref-galton-asch" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [4]
 </div>
@@ -424,7 +426,7 @@ href="https://doi.org/10.48550/arXiv.2406.07805">10.48550/arXiv.2406.07805</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-hitting-times" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hitting-times" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [5]
 </div>
@@ -437,7 +439,7 @@ href="https://doi.org/10.48550/arXiv.2405.15094">10.48550/arXiv.2405.15094</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-continuous-time" class="csl-entry" role="doc-biblioentry">
+<div id="ref-continuous-time" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [6]
 </div>
@@ -450,7 +452,7 @@ href="https://doi.org/10.48550/arXiv.2402.17730">10.48550/arXiv.2402.17730</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-k-submodular" class="csl-entry" role="doc-biblioentry">
+<div id="ref-k-submodular" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [7]
 </div>
@@ -463,7 +465,7 @@ href="https://doi.org/10.48550/arXiv.2305.16013">10.48550/arXiv.2305.16013</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-ad-allocation" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ad-allocation" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [8]
 </div>
@@ -475,8 +477,7 @@ href="https://doi.org/10.48550/arXiv.2302.01827">10.48550/arXiv.2302.01827</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-learning-mixtures" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-learning-mixtures" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [9]
 </div>
@@ -488,7 +489,7 @@ href="https://doi.org/10.1145/3543507.3583524">10.1145/3543507.3583524</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-decision-trees" class="csl-entry" role="doc-biblioentry">
+<div id="ref-decision-trees" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [10]
 </div>
@@ -500,7 +501,7 @@ href="https://doi.org/10.48550/ARXIV.2208.04828">10.48550/ARXIV.2208.04828</a>.
 </div></li>
 </ol>
 </div>
-<div id="ref-blockchain" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blockchain" class="csl-entry" role="listitem">
 <div class="csl-left-margin">
 [11]
 </div>
@@ -555,8 +556,8 @@ href="https://2024.ecmlpkdd.org/">ECML/PKDD 2024 journal track</a></li>
 href="https://github.com/jgrapht/jgrapht">JGraphT</a> and <a
 href="https://github.com/networkx/networkx">NetworkX</a></li>
 </ul>
-<p><small>Built with <a href="https://pandoc.org/">Pandoc</a> on May 29,
-2025.</small></p>
+<p><small>Built with <a href="https://pandoc.org/">Pandoc</a> on October
+28, 2025.</small></p>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZFM6BLJ07"></script>
 <script>
